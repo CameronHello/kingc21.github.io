@@ -23,9 +23,28 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+	<script type="text/javascript">
+	var totalCount = 6;
+	function ChangeIt()
+	
+	{
+	var num = Math.ceil( Math.random() *totalCount);
+	document.body.background = 'img/bgimages/'+num+'.jpg';
+	document.body.style.backgroundRepeat= "no-repeat";
+	document.body.style.backgroundPosition= "center center";
+	document.body.style.backgroundAttachment= "scroll";
+	document.body.style.backgroundSize= "cover";
+	} 
+	
+	</script> 
+
 </head>
 
 <body>
+
+<script type ="text/javascript">
+ChangeIt();
+</script>
 
 <script type="text/javascript">
     var urls = [
